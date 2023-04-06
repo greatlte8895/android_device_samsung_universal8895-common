@@ -103,6 +103,9 @@ TARGET_POWERHAL_VARIANT := samsung
 BOARD_CUSTOM_BT_CONFIG := $(LOCAL_PATH)/bluetooth/libbt_vndcfg.txt
 BOARD_HAVE_BLUETOOTH := true
 
+# SELinux
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
+
 # Backlight
 BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
 
